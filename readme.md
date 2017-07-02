@@ -28,8 +28,8 @@ git init
 git remote add origin https://github.com/dj79/git-windows.git
 ```
 >[remote "origin"]
-	url = https://github.com/dj79/git-windows.git
-	fetch = +refs/heads/\*:refs/remotes/origin/\*
+>	url = https://github.com/dj79/git-windows.git
+>	fetch = +refs/heads/\*:refs/remotes/origin/\*
 
 *git config branch.master.remote* relaciona o branch local com o branch remoto e complementa a arquivo **.git\config**
 ```
