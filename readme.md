@@ -35,16 +35,16 @@ git remote add origin https://github.com/dj79/git-windows.git
 ```
 git config branch.master.remote origin
 ```
->[branch "master"]
-	remote = origin
+>[branch "master"]  
+>	remote = origin
 	
 *git config branch.master.merge* complementa a seção branch master do arquivo **.git\config**
 ```
 git config branch.master.merge refs/heads/master
 ```
->[branch "master"]
-	remote = origin
-	merge = refs/heads/master
+>[branch "master"]  
+>	remote = origin  
+>	merge = refs/heads/master
 	
 ## Fluxo alternativo 1 configuração do remoto p/ o local
 *git clone* realiza todos os passos do fluxo 1 e faz o download (git pull) de um repositório remoto p/ uma pasta local
@@ -52,14 +52,15 @@ git config branch.master.merge refs/heads/master
 git clone https://github.com/dj79/git-windows.git
 ```
 ## Fluxo 2 organização
-Após o Git estar devidamente configurado e o momento de manipular o projeto que esta agora sobre o monitoramento do Git. Executar o comando para pegar a última versão (pull - GetLatestVersion)
+Após o Git estar devidamente configurado e o momento de manipular o projeto que esta agora sobre o monitoramento do Git. 
+Executar o comando para pegar a última versão (pull - GetLatestVersion)
 ```
 git pull
 ```
-*git status* apresenta uma série de informações sobre o branch, nem todas visíveis inicialmente:
-verifica o estado do branch esta intacto ainda (up-to-date)
+*git status* apresenta uma série de informações sobre o branch, nem todas visíveis inicialmente:  
+verifica o estado do branch esta intacto ainda (up-to-date),  
 lista de arquivos Untracked (não monitorados pelo Git ainda, ou seja unstage)  
-lista de arquivos Changes to be committed (situação staging que forão alterados)
+lista de arquivos Changes to be committed (situação staging que forão alterados)  
 verifica se há diferença entre o branch e o origin/master, com quant. de commit a mais e sugestão de git push.
 ```
 git status
@@ -85,4 +86,15 @@ git log
 *git push* envia os arquivo par ao repositório remoto
 ```
 git push
+```
+
+Ainda existe outros comandos de organização:  
+*git reset HEAD* retorna os arquivos de staging para untracked
+```
+git reset HEAD arq2.css
+```
+
+*git checkout* descartar a alteração no arquivo (undo)
+```
+git checkout arq2.css
 ```
