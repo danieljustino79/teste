@@ -98,3 +98,12 @@ git reset HEAD arq2.css
 ```
 git checkout arq2.css
 ```
+
+*git rm --cached* remove o arquivo do repositório
+```
+git rm --cache arq2.css
+```
+*git rm* remove o arquivo do repositório e do diretório local
+```
+git rm arq2.css
+```
