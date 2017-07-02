@@ -15,13 +15,13 @@ cd pasta\projeto
 ```
 git init
 ```
->[core]
-	repositoryformatversion = 0
-	filemode = false
-	bare = false
-	logallrefupdates = true
-	symlinks = false
-	ignorecase = true
+>[core]  
+>	repositoryformatversion = 0  
+>	filemode = false  
+>	bare = false  
+>	logallrefupdates = true  
+>	symlinks = false  
+>	ignorecase = true  
 	
 *git remote add origin* configura o apontamento do servidor remoto e complementa a configuração no arquivo **.git\config**
 ```
